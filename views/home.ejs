@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket.io</title>
+    <link rel="stylesheet" href="assests/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <style type="text/css">
+        .active {
+            color: blue;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="divSignUp">
+                <input type="text" name="username" placeholder="Input Username" id="inputUsername">
+                <button id="btnCreate">Create</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="divChat">
+                <input type="text" name="" value="" id="inputMessage">
+                <button id="btnSend">Send</button>
+                <br>
+                <button id="btnSendPrivate">Send Private</button>
+                <br>
+                <button id="btnSendRoom">Send Room</button>
+                <br>
+                <div id="divRoom">
+                    <h3>Khu vực chọn phòng chat</h3>
+                    <p>Phòng 1</p>
+                    <p>Phòng 2</p>
+                    <p>Phòng 3</p>
+                    <p>Phòng 4</p>
+                    <p>Phòng 5</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="divMessages">
+                    <h3>Khu vực hiện tin nhắn</h3>
+                </div>
+            </div>
+            <div style="border-left:1px solid #000;height:500px"></div>
+            <div class="col-md-3">
+                <div id="divUsers">
+                    <h3>Danh sách người tham gia chat</h3>
+                </div>
+            </div>
+            <div style="border-left:1px solid #000;height:500px"></div>
+            <div class="col-md-3">
+                <div id="divMessagePrivate">
+                    <h3>Khu vực nhận tin nhắn Private</h3>
+                </div>
+            </div>
+            <div style="border-left:1px solid #000;height:500px"></div>
+            <div class="col-md-2">
+                <div id="divMessageRoom">
+                    <h3>Khu vực nhận tin nhắn Room</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script src="jquery.js"></script>
+<script src="assests/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="home.js"></script>
+<script src="reload/reload.js"></script>
